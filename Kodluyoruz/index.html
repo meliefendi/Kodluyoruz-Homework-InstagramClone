@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>İnstagram</title>
+</head>
+
+<body>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+    <!-- Navbar & Header  -  Start -->
+<div class="container-fluid position-static d-flex justify-content-center border-bottom ">
+        <!-- Navbar Container-Fluid - Start -->
+        
+        <!-- Navbar Row - Start -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="width: 975px; height: 60px;">
+            <!-- Navbar - Start -->
+            <div class="col-sm-4 ">
+                <!-- Navbar Logo v Dropdown - Start -->
+                <div class="collapse navbar-collapse ms-1" id="navbarScroll">
+                    <ul class="navbar-nav my-lg-0 navbar-nav-scroll ">
+                        <li class="nav-item mt-2 "> <a class="navbar-brand me-0" href="#">
+                                <svg aria-label="Instagram" class="_ab6-" color="#262626" fill="#262626" height="29"
+                                    role="img" viewBox="32 4 113 32" width="103">
+                                    <path clip-rule="evenodd"
+                                        d="M37.82 4.11c-2.32.97-4.86 3.7-5.66 7.13-1.02 4.34 3.21 6.17 3.56 5.57.4-.7-.76-.94-1-3.2-.3-2.9 1.05-6.16 2.75-7.58.32-.27.3.1.3.78l-.06 14.46c0 3.1-.13 4.07-.36 5.04-.23.98-.6 1.64-.33 1.9.32.28 1.68-.4 2.46-1.5a8.13 8.13 0 0 0 1.33-4.58c.07-2.06.06-5.33.07-7.19 0-1.7.03-6.71-.03-9.72-.02-.74-2.07-1.51-3.03-1.1Zm82.13 14.48a9.42 9.42 0 0 1-.88 3.75c-.85 1.72-2.63 2.25-3.39-.22-.4-1.34-.43-3.59-.13-5.47.3-1.9 1.14-3.35 2.53-3.22 1.38.13 2.02 1.9 1.87 5.16ZM96.8 28.57c-.02 2.67-.44 5.01-1.34 5.7-1.29.96-3 .23-2.65-1.72.31-1.72 1.8-3.48 4-5.64l-.01 1.66Zm-.35-10a10.56 10.56 0 0 1-.88 3.77c-.85 1.72-2.64 2.25-3.39-.22-.5-1.69-.38-3.87-.13-5.25.33-1.78 1.12-3.44 2.53-3.44 1.38 0 2.06 1.5 1.87 5.14Zm-13.41-.02a9.54 9.54 0 0 1-.87 3.8c-.88 1.7-2.63 2.24-3.4-.23-.55-1.77-.36-4.2-.13-5.5.34-1.95 1.2-3.32 2.53-3.2 1.38.14 2.04 1.9 1.87 5.13Zm61.45 1.81c-.33 0-.49.35-.61.93-.44 2.02-.9 2.48-1.5 2.48-.66 0-1.26-1-1.42-3-.12-1.58-.1-4.48.06-7.37.03-.59-.14-1.17-1.73-1.75-.68-.25-1.68-.62-2.17.58a29.65 29.65 0 0 0-2.08 7.14c0 .06-.08.07-.1-.06-.07-.87-.26-2.46-.28-5.79 0-.65-.14-1.2-.86-1.65-.47-.3-1.88-.81-2.4-.2-.43.5-.94 1.87-1.47 3.48l-.74 2.2.01-4.88c0-.5-.34-.67-.45-.7a9.54 9.54 0 0 0-1.8-.37c-.48 0-.6.27-.6.67 0 .05-.08 4.65-.08 7.87v.46c-.27 1.48-1.14 3.49-2.09 3.49s-1.4-.84-1.4-4.68c0-2.24.07-3.21.1-4.83.02-.94.06-1.65.06-1.81-.01-.5-.87-.75-1.27-.85-.4-.09-.76-.13-1.03-.11-.4.02-.67.27-.67.62v.55a3.71 3.71 0 0 0-1.83-1.49c-1.44-.43-2.94-.05-4.07 1.53a9.31 9.31 0 0 0-1.66 4.73c-.16 1.5-.1 3.01.17 4.3-.33 1.44-.96 2.04-1.64 2.04-.99 0-1.7-1.62-1.62-4.4.06-1.84.42-3.13.82-4.99.17-.8.04-1.2-.31-1.6-.32-.37-1-.56-1.99-.33-.7.16-1.7.34-2.6.47 0 0 .05-.21.1-.6.23-2.03-1.98-1.87-2.69-1.22-.42.39-.7.84-.82 1.67-.17 1.3.9 1.91.9 1.91a22.22 22.22 0 0 1-3.4 7.23v-.7c-.01-3.36.03-6 .05-6.95.02-.94.06-1.63.06-1.8 0-.36-.22-.5-.66-.67-.4-.16-.86-.26-1.34-.3-.6-.05-.97.27-.96.65v.52a3.7 3.7 0 0 0-1.84-1.49c-1.44-.43-2.94-.05-4.07 1.53a10.1 10.1 0 0 0-1.66 4.72c-.15 1.57-.13 2.9.09 4.04-.23 1.13-.89 2.3-1.63 2.3-.95 0-1.5-.83-1.5-4.67 0-2.24.07-3.21.1-4.83.02-.94.06-1.65.06-1.81 0-.5-.87-.75-1.27-.85-.42-.1-.79-.13-1.06-.1-.37.02-.63.35-.63.6v.56a3.7 3.7 0 0 0-1.84-1.49c-1.44-.43-2.93-.04-4.07 1.53-.75 1.03-1.35 2.17-1.66 4.7a15.8 15.8 0 0 0-.12 2.04c-.3 1.81-1.61 3.9-2.68 3.9-.63 0-1.23-1.21-1.23-3.8 0-3.45.22-8.36.25-8.83l1.62-.03c.68 0 1.29.01 2.19-.04.45-.02.88-1.64.42-1.84-.21-.09-1.7-.17-2.3-.18-.5-.01-1.88-.11-1.88-.11s.13-3.26.16-3.6c.02-.3-.35-.44-.57-.53a7.77 7.77 0 0 0-1.53-.44c-.76-.15-1.1 0-1.17.64-.1.97-.15 3.82-.15 3.82-.56 0-2.47-.11-3.02-.11-.52 0-1.08 2.22-.36 2.25l3.2.09-.03 6.53v.47c-.53 2.73-2.37 4.2-2.37 4.2.4-1.8-.42-3.15-1.87-4.3-.54-.42-1.6-1.22-2.79-2.1 0 0 .69-.68 1.3-2.04.43-.96.45-2.06-.61-2.3-1.75-.41-3.2.87-3.63 2.25a2.61 2.61 0 0 0 .5 2.66l.15.19c-.4.76-.94 1.78-1.4 2.58-1.27 2.2-2.24 3.95-2.97 3.95-.58 0-.57-1.77-.57-3.43 0-1.43.1-3.58.19-5.8.03-.74-.34-1.16-.96-1.54a4.33 4.33 0 0 0-1.64-.69c-.7 0-2.7.1-4.6 5.57-.23.69-.7 1.94-.7 1.94l.04-6.57c0-.16-.08-.3-.27-.4a4.68 4.68 0 0 0-1.93-.54c-.36 0-.54.17-.54.5l-.07 10.3c0 .78.02 1.69.1 2.09.08.4.2.72.36.91.15.2.33.34.62.4.28.06 1.78.25 1.86-.32.1-.69.1-1.43.89-4.2 1.22-4.31 2.82-6.42 3.58-7.16.13-.14.28-.14.27.07l-.22 5.32c-.2 5.37.78 6.36 2.17 6.36 1.07 0 2.58-1.06 4.2-3.74l2.7-4.5 1.58 1.46c1.28 1.2 1.7 2.36 1.42 3.45-.21.83-1.02 1.7-2.44.86-.42-.25-.6-.44-1.01-.71-.23-.15-.57-.2-.78-.04-.53.4-.84.92-1.01 1.55-.17.61.45.94 1.09 1.22.55.25 1.74.47 2.5.5 2.94.1 5.3-1.42 6.94-5.34.3 3.38 1.55 5.3 3.72 5.3 1.45 0 2.91-1.88 3.55-3.72.18.75.45 1.4.8 1.96 1.68 2.65 4.93 2.07 6.56-.18.5-.69.58-.94.58-.94a3.07 3.07 0 0 0 2.94 2.87c1.1 0 2.23-.52 3.03-2.31.09.2.2.38.3.56 1.68 2.65 4.93 2.07 6.56-.18l.2-.28.05 1.4-1.5 1.37c-2.52 2.3-4.44 4.05-4.58 6.09-.18 2.6 1.93 3.56 3.53 3.69a4.5 4.5 0 0 0 4.04-2.11c.78-1.15 1.3-3.63 1.26-6.08l-.06-3.56a28.55 28.55 0 0 0 5.42-9.44s.93.01 1.92-.05c.32-.02.41.04.35.27-.07.28-1.25 4.84-.17 7.88.74 2.08 2.4 2.75 3.4 2.75 1.15 0 2.26-.87 2.85-2.17l.23.42c1.68 2.65 4.92 2.07 6.56-.18.37-.5.58-.94.58-.94.36 2.2 2.07 2.88 3.05 2.88 1.02 0 2-.42 2.78-2.28.03.82.08 1.49.16 1.7.05.13.34.3.56.37.93.34 1.88.18 2.24.11.24-.05.43-.25.46-.75.07-1.33.03-3.56.43-5.21.67-2.79 1.3-3.87 1.6-4.4.17-.3.36-.35.37-.03.01.64.04 2.52.3 5.05.2 1.86.46 2.96.65 3.3.57 1 1.27 1.05 1.83 1.05.36 0 1.12-.1 1.05-.73-.03-.31.02-2.22.7-4.96.43-1.79 1.15-3.4 1.41-4 .1-.21.15-.04.15 0-.06 1.22-.18 5.25.32 7.46.68 2.98 2.65 3.32 3.34 3.32 1.47 0 2.67-1.12 3.07-4.05.1-.7-.05-1.25-.48-1.25Z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg></a></li>
+                        <li class="nav-item dropdown mt-1">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class=""> <a class="dropdown-item" href="#" width="10" height="10"> <svg
+                                            xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                            fill="currentColor" class="bi bi-person-check me-2" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                                            <path fill-rule="evenodd"
+                                                d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                        </svg>Takip</a></li>
+                                <li><a class="dropdown-item" href="#" width="10" height="10"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                            fill="currentColor" class="bi bi-star me-2" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                                        </svg>Favoriler</a></li>
+                            </ul>
+                    </ul>
+
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div><!-- Navbar Logo v Dropdown - End -->
+
+            <!--Navbar Search Bar - Start-->
+            <div class="col-sm-4 ">
+                <div class="collapse navbar-collapse d-flex justify-content-center" style="width: 268; height: 36px;">
+                    <form class="form-inline me-3 ">
+                        <input class="form-control mr-sm-2 borber border-0" type="search" placeholder="Ara"
+                            style=" height: 36px; width: 268px; border-radius: 7px;" aria-label="Search" />
+                    </form>
+                </div>
+            </div>
+            <!--Navbar Search Bar - End-->
+
+
+            <!-- navbar-icon  Start-->
+            <div class="col-sm-4 d-flex justify-content-center">
+                <ul class="navbar-nav  me-2 ">
+                    <li class="nav-item me-2">
+                        <a class="nav-link  text-black " href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
+                            </svg></a>
+                    </li>
+                    <li class="nav-item  me-2">
+                        <a class="nav-link text-black" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" fill="currentColor" class="bi bi-messenger" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z" />
+                            </svg></a>
+                    </li>
+
+                    <li class="nav-item me-2">
+                        <a class="nav-link text-black" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="21"
+                                height="21" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16"
+                                style="font-stretch: ultra-condensed;">
+                                <path
+                                    d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                <path
+                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                            </svg></a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link text-black" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="21"
+                                height="21" fill="currentColor" class="bi bi-compass" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                                <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z" />
+                            </svg></a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link text-black" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="21"
+                                height="21" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                            </svg></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black"
+                            href="https://instagram.fadb3-2.fna.fbcdn.net/v/t51.2885-19/275677295_298591789028470_4483400727748451693_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fadb3-2.fna.fbcdn.net&_nc_cat=110&_nc_ohc=XbnhcyECpL0AX_31av2&tn=8UFABQ84I1Fi7MQj&edm=ABmJApABAAAA&ccb=7-5&oh=00_AT-0T3_VN4U-0YRsvvnEVvULQ_88vIQTkMatgiTqRVu0Eg&oe=634577AF&_nc_sid=6136e7"
+                            target="_blank">
+                            <img src="img/profil.jpg" alt="" class="mb-2 rounded-circle"
+                                style="width: 24px; height: 24px; border-radius: 50%;">
+                        </a>
+                    </li>
+                </ul>
+            </div> <!-- navbar-icon  End-->
+        </nav><!-- Navbar - End -->
+
+
+    </div><!-- Navbar Row - End -->
+
+
+    </div><!-- Navbar Container - End -->
+    </div>
+    </div> <!-- Navbar Container-Fluid - End -->
+    <!-- Navbar & Header  -  End -->
+
+     <!-- Section(Article,Aside)  -  Start -->
+    <!-- Content  -  Start -->
+    <section class="container mt-4 bg-light">
+        <article class="row ms-1">
+            <div class="col-md-4 offset-sm-2 border border-1" style="width: 470px; height: 119px; border-radius:8px ;">
+                <ul class="d-flex list-unstyled mt-4" style="width: 468px; height: 85px;">
+                    <!--style="width:470px ;height: 119;-->
+                    <li class="text-center ms-1" style="text-decoration: none; width: 66px; height: 122px;">
+                        <a href="#" style="text-decoration: none; width: 66px; height: 122px;" class="text-black">
+                            <img src="img/promachos.jpg" class="img-fluid"
+                                style="width: 58px; height: 58px; border-radius: 50%;border: 2px solid rgb(39, 238, 49);"
+                                alt="">
+                            <span style="font-size:12px;">promachos</span>
+                        </a>
+                    </li>
+                    <li class="text-center ms-2" style="width: 66px; height: 122px;">
+                        <a href="https://youtu.be/rGDPuzvB4Z0" target="_blank" class="text-black"
+                            style="text-decoration: none; width: 66px; height: 122px;">
+                            <img src="img/company-logo.png" class="img-fluid"
+                                style="width: 58px; height: 58px; border-radius: 50%;border: 2px solid rgb(238, 39, 82);"
+                                alt="">
+                            <span style="font-size:12px;">company</span>
+                        </a>
+                    </li>
+                    <li class="text-center ms-1" style="width: 66px; height: 122px;">
+                        <a href="https://youtu.be/lAxsGSzPdg0" target="_blank" class="text-black"
+                            style="text-decoration: none; width: 66px; height: 122px;">
+                            <img src="img/creed-logo.png" class="img-fluid"
+                                style="width: 58px; height: 58px; border-radius: 50%;border: 2px solid rgb(238, 39, 82);"
+                                alt="">
+                            <span style="font-size:12px;">assassin's</span>
+                        </a>
+                    </li>
+                    <li class="text-center ms-2" style="width: 66px; height: 122px;">
+                        <a href="#" class="text-black" style="text-decoration: none; width: 66px; height: 122px;">
+                            <img src="img/deadmau-logo.png" class="img-fluid"
+                                style="width: 58px; height: 58px; border-radius: 50%;border: 2px solid rgb(238, 39, 82);"
+                                alt="">
+                            <span style="font-size:12px;">deadmau</span>
+                        </a>
+                    </li>
+                    <li class="text-center ms-2" style="width: 66px; height: 122px;">
+                        <a href="#" class="text-black" style="text-decoration: none; width: 66px; height: 122px;">
+                            <img src="img/Rammstein-logo.png" class="img-fluid"
+                                style="width: 58px; height: 58px; border-radius: 50%;border: 2px solid rgb(238, 39, 82);"
+                                alt="">
+                            <span style="font-size:12px;">rammstein</span>
+                        </a>
+                    </li>
+                    <li class="text-center ms-3" style="width: 66px; height: 122px;">
+                        <a href="https://youtu.be/HSurLvWTFhc" class="text-black"
+                            style="text-decoration: none; width: 66px; height: 122px;">
+                            <img src="img/avicii-logo.png" class="img-fluid"
+                                style="width: 58px; height: 58px; border-radius: 50%;border: 2px solid rgb(47, 216, 228);"
+                                alt="">
+                            <span style="font-size:12px;">avicii</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <!--KART OLACAK ROWLAR-->
+                <div class="row mt-4"> <!-- ROW1 START-->
+
+                    <div class="card">
+                        <div class="row mt-2">
+                            <div class="col-sm-1">
+                                <img src="img/ocean-logo.jpg" alt=""
+                                    style="width: 32px; height: 32px; border-radius: 50%;border: 2px solid rgb(238, 39, 82);">
+                            </div>
+                            <div class="col-sm-10">
+                                <div style="font-size: 13px;" class="mt-2 ms-1"><b class="text-dark">ocean</b></div>
+                            </div>
+                            <div class="col-sm-1">
+                                <div style="font-size: 18px;">
+                                    <b class=""> ... </b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <img src="img/whale1.jpg" class="card-img-top" alt="" style="width: 476px ;height:586.5px">
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-1">
+                                <a class=" text-black" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="23"
+                                        height="23" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg></a>
+                            </div>
+                            <div class="col-sm-1"><a class=" text-black" href="#"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-chat" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z" />
+                                    </svg></a></div>
+                            <div class="col-sm-1"><a class=" text-black" href="#"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-send" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+                                    </svg></a></div>
+                            <div class="col-sm-9 d-flex justify-content-end"><a class=" text-black" href="#"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bookmark" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                    </svg></a></div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-12">
+                                <div class="d-flex">
+                                    <img src="img/promachos.jpg" alt=""
+                                        style="width: 20px; height: 20px; border-radius: 50%;">
+                                    <div style="font-size: 13px;" class="ms-2"><b class="text-dark"> promachos </b> ve
+                                        <b class="text-dark">113 diğer kişi</b> beğendi
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-12">
+                                <div style="font-size: 13px;" class=""><b class="text-dark"> ocean </b> HAVE A NİCE A
+                                    DAY ✌✌✌</div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-12" style="font-size: 14px; color: rgb(145, 141, 141);"> 71 yorumun
+                                tamamını görüntüle</div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-sm-12" style="font-size: 10px; color: rgb(145, 141, 141);">2 GÜN ÖNCE</div>
+                        </div>
+
+                       
+                           
+                                <hr class="mb-2">
+                          
+                       
+                        <div class="row mb-2">
+                            <div class="col-sm-1">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                        <path
+                                            d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="mt-1"
+                                    style="width:12 ; height:12px; color: rgb(145, 141, 141);font-size: 14px;"> Yorum
+                                    ekle...</div>
+                            </div>
+                            <div class="col-sm-2"><a href="#"
+                                    style="text-decoration: none; font-size: 13px; color:#61bfee; width: 58px; height: 10px;"
+                                    class=""><b class=""> Paylaş </b></a></div>
+                        </div>
+
+                    </div>
+
+                </div> <!-- ROW1 END-->
+                <div class="row mt-4"><!-- ROW2 START-->
+
+                    <div class="card">
+                        <div class="row mt-2">
+                            <div class="col-sm-1">
+                                <img src="img/profil.jpg" alt=""
+                                    style="width: 32px; height: 32px; border-radius: 50%;">
+                            </div>
+                            <div class="col-sm-10">
+                                <div style="font-size: 13px;" class="mt-2 ms-1"><b class="text-dark">melh.akkas</b></div>
+                            </div>
+                            <div class="col-sm-1">
+                                <div style="font-size: 18px;">
+                                    <b class=""> ... </b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2"> <!--style="width: 476px ;height:586.5px"-->
+                            <video width="400" height="586.5" controls>
+                                <source src="img//TLN.mp4" type="video/mp4">
+                                <source src="mov_bbb.ogg" type="video/ogg">
+                                Your browser does not support HTML video.
+                              </video>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-1">
+                                <a class=" text-black" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="23"
+                                        height="23" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg></a>
+                            </div>
+                            <div class="col-sm-1"><a class=" text-black" href="#"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-chat" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z" />
+                                    </svg></a></div>
+                            <div class="col-sm-1"><a class=" text-black" href="#"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-send" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+                                    </svg></a></div>
+                            <div class="col-sm-9 d-flex justify-content-end"><a class=" text-black" href="#"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bookmark" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                    </svg></a></div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-12">
+                                <div class="d-flex">
+                                    <img src="img/eminem-logo.png" alt=""
+                                        style="width: 20px; height: 20px; border-radius: 50%;">
+                                    <div style="font-size: 13px;" class="ms-2"><b class="text-dark"> kajinski </b> ve
+                                        <b class="text-dark">13 diğer kişi</b> beğendi
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-12">
+                                <div style="font-size: 13px;" class=""><b class="text-dark"> melh.akkas </b><a href="https://youtu.be/bGAdvWoHeK0" class="text-decoration-none">https://youtu.be/bGAdvWoHeK0</a> #music #love 🎶🎵</div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-12" style="font-size: 14px; color: rgb(145, 141, 141);"> 15 yorumun
+                                tamamını görüntüle</div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-12 ms-2" style="font-size: 13px;"><b class="text-dark"> slushi </b> 🎶🎶🎶🎶</div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-12 ms-2" style="font-size: 13px;"><b class="text-dark"> melh.akkas </b><a href="#" class="text-decoration-none">@slushi</a>  are you ready for the evening? ✨ </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-sm-12" style="font-size: 10px; color: rgb(145, 141, 141);">1 GÜN ÖNCE</div>
+                        </div>
+
+                       
+                           
+                                <hr class="mb-2">
+                          
+                       
+                        <div class="row mb-2">
+                            <div class="col-sm-1">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                        <path
+                                            d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="mt-1"
+                                    style="width:12 ; height:12px; color: rgb(145, 141, 141);font-size: 14px;"> Yorum
+                                    ekle...</div>
+                            </div>
+                            <div class="col-sm-2"><a href="#"
+                                    style="text-decoration: none; font-size: 13px; color:#61bfee; width: 58px; height: 10px;"
+                                    class=""><b class=""> Paylaş </b></a></div>
+                        </div>
+
+                    </div>
+
+                </div><!-- ROW2 END-->
+                <div class="row mt-4"> <!-- ROW3 START-->
+
+                    <div class="card">
+                        <div class="row mt-2">
+                            <div class="col-sm-1">
+                                <img src="img/whale3.jpg" alt=""
+                                    style="width: 32px; height: 32px; border-radius: 50%;border: 2px solid rgb(238, 39, 82);">
+                            </div>
+                            <div class="col-sm-10">
+                                <div style="font-size: 13px;" class="mt-2 ms-1"><b class="text-dark">DOĞA</b></div>
+                            </div>
+                            <div class="col-sm-1">
+                                <div style="font-size: 18px;">
+                                    <b class=""> ... </b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">     
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="img/tree1.jpg"  style="width: 476px ;height:586.5px" class="w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/1.jpg" style="width: 476px ;height:586.5px" class="w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/양평_용문사_은행나무-685x1024.jpg" style="width: 476px ;height:586.5px" class="w-100" alt="...">
+                                  </div>
+                                 
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-1">
+                                <a class=" text-black" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="23"
+                                        height="23" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg></a>
+                            </div>
+                            <div class="col-sm-1"><a class=" text-black" href="#"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-chat" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z" />
+                                    </svg></a></div>
+                            <div class="col-sm-1"><a class=" text-black" href="#"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-send" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+                                    </svg></a></div>
+                            <div class="col-sm-9 d-flex justify-content-end"><a class=" text-black" href="#"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bookmark" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                    </svg></a></div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-12">
+                                <div class="d-flex">
+                                    <img src="img/MON1.jpeg" alt=""
+                                        style="width: 20px; height: 20px; border-radius: 50%;">
+                                    <div style="font-size: 13px;" class="ms-2"><b class="text-dark"> Montain </b> ve
+                                        <b class="text-dark">221 diğer kişi</b> beğendi
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-12">
+                                <div style="font-size: 13px;" class=""><b class="text-dark"> DOĞA </b> UÇMUYORSA KUŞLAR, ÖLÜYORSA BALIKLAR, NASIL YAŞAR İNSANLAR ? 🌳</div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-12" style="font-size: 14px; color: rgb(145, 141, 141);"> 52 yorumun
+                                tamamını görüntüle</div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-12 ms-2" style="font-size: 13px;"><b class="text-dark"> balık_7845 </b> 😞</div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-12 ms-2" style="font-size: 13px;"><b class="text-dark"> DOĞA </b><a href="#" class="text-decoration-none">@balık_7845</a>  😕</div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-sm-12" style="font-size: 10px; color: rgb(145, 141, 141);">6 SAAT ÖNCE</div>
+                        </div>
+
+                       
+                           
+                                <hr class="mb-2">
+                          
+                       
+                        <div class="row mb-2">
+                            <div class="col-sm-1">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                        <path
+                                            d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="mt-1"
+                                    style="width:12 ; height:12px; color: rgb(145, 141, 141);font-size: 14px;"> Yorum
+                                    ekle...</div>
+                            </div>
+                            <div class="col-sm-2"><a href="#"
+                                    style="text-decoration: none; font-size: 13px; color:#61bfee; width: 58px; height: 10px;"
+                                    class=""><b class=""> Paylaş </b></a></div>
+                        </div>
+
+                    </div>
+
+                </div>  <!-- ROW3 END-->
+                <div class="row mt-4"><!-- ROW3 START-->
+
+                    <div class="card">
+                        <div class="row mt-2">
+                            <div class="col-sm-1">
+                                <img src="img/eminem-logo.png" alt=""
+                                    style="width: 32px; height: 32px; border-radius: 50%;border: 2px solid rgb(62, 238, 39);">
+                            </div>
+                            <div class="col-sm-10">
+                                <div style="font-size: 13px;" class="mt-2 ms-1"><b class="text-dark">kajinski</b></div>
+                            </div>
+                            <div class="col-sm-1">
+                                <div style="font-size: 18px;">
+                                    <b class=""> ... </b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2"> <!--style="width: 476px ;height:586.5px"-->
+                            <video width="400" height="586.5" controls>
+                                <source src="img/ECT.mp4" type="video/mp4">
+                                <source src="mov_bbb.ogg" type="video/ogg">
+                                Your browser does not support HTML video.
+                              </video>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-1">
+                                <a class=" text-black" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="23"
+                                        height="23" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg></a>
+                            </div>
+                            <div class="col-sm-1"><a class=" text-black" href="#"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-chat" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z" />
+                                    </svg></a></div>
+                            <div class="col-sm-1"><a class=" text-black" href="#"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-send" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+                                    </svg></a></div>
+                            <div class="col-sm-9 d-flex justify-content-end"><a class=" text-black" href="#"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bookmark" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                    </svg></a></div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-12">
+                                <div class="d-flex">
+                                    <img src="img/profil.jpg" alt=""
+                                        style="width: 20px; height: 20px; border-radius: 50%;">
+                                    <div style="font-size: 13px;" class="ms-2"><b class="text-dark"> melh.akkas </b> ve
+                                        <b class="text-dark">27 diğer kişi</b> beğendi
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-12">
+                                <div style="font-size: 13px;" class=""><b class="text-dark"> kajinski </b>meine neue Strecke🎈 <a href="https://youtu.be/_lUI_YMk-L0" class="text-decoration-none">https://youtu.be/_lUI_YMk-L0</a>  Ich bin so froh,</div>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-sm-12" style="font-size: 14px; color: rgb(145, 141, 141);">✨🎃</div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-sm-12" style="font-size: 14px; color: rgb(145, 141, 141);">...devamı</div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-12" style="font-size: 14px; color: rgb(145, 141, 141);"> 5 yorumun
+                                tamamını görüntüle</div>
+                        </div>
+
+                        <div class="row mt-2 d-flex">
+                            <div class="col-sm-6" style="font-size: 10px; color: rgb(145, 141, 141);">2 GÜN ÖNCE      <b class="text-dark m-2" style="font-size: 12px; color: rgb(145, 141, 141);"> Çevirisine bak </b></div> 
+                           
+                        </div>
+
+                       
+                           
+                                <hr class="mb-2">
+                          
+                       
+                        <div class="row mb-2">
+                            <div class="col-sm-1">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                        <path
+                                            d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="mt-1"
+                                    style="width:12 ; height:12px; color: rgb(145, 141, 141);font-size: 14px;"> Yorum
+                                    ekle...</div>
+                            </div>
+                            <div class="col-sm-2"><a href="#"
+                                    style="text-decoration: none; font-size: 13px; color:#61bfee; width: 58px; height: 10px;"
+                                    class=""><b class=""> Paylaş </b></a></div>
+                        </div>
+
+                    </div>
+
+                </div><!-- ROW3 END-->
+
+
+                
+
+                
+              
+
+            </div>
+            <div class="col-sm-4 sticky  ms-4" style="width: 319px; height: 940px;">
+                <!--yan taraf-->
+
+                <div class="row mt-4" style="width: 319px; height: 56px;">
+                    <!--yan taraf-->
+
+                    <div class="col-sm-3">
+                        <!--yan taraf-->
+
+                        <img src="img/profil.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%;">
+
+
+                    </div>
+                    <div class="col-sm-4 mt-2">
+                        <div style="font-size: 13px;"><b class="text-dark"> melh.akkas</b> </div>
+                        <div style="font-size: 14px; color: rgb(145, 141, 141);"> Melih Akkas</div>
+                    </div>
+                    <div class="col-sm-5 mt-3 d-flex justify-content-end">
+                        <a href="#"
+                            style="text-decoration: none; font-size: 13px; color:#00a8ff; width: 58px; height: 10px;"
+                            class="me-0"><b class=""> Geçiş Yap </b></a>
+                    </div>
+                </div>
+                <div class="row  mt-3">
+                    <div class="col-sm-6">
+                        <div style="font-size: 14px; color: rgb(145, 141, 141);"><b> Senin İçin Öneriler</b></div>
+                    </div>
+                    <div class="col-sm-6 d-flex justify-content-end" style="font-size: 13px;"> <b class="text-dark">
+                            <div>Tümünü Gör
+                        </b></div>
+                </div>
+
+            </div>
+            <div class="row mt-3">
+                <div class="col-sm-2 d-flex justify-content-start">
+                    <!--yan taraf-->
+
+                    <img src="img/chil-logol.png" alt="" style="width: 32px; height: 32px; border-radius: 50%;">
+
+
+                </div>
+                <div class="col-sm-7 d-block">
+                    <div style="font-size: 13px;"><b class="text-dark"> chill masters</b> </div>
+                    <div style="font-size: 11px; color: rgb(145, 141, 141);"> avicii + 1 diğer kişi takip ediyor</div>
+                </div>
+                <div class="col-sm-3 d-flex justify-content-end text-center mt-2">
+                    <a href="#"
+                        style="text-decoration: none; font-size: 13px; color:#00a8ff; width: 58px; height: 10px;"
+                        class="me-0"><b class=""> Takip Et </b></a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-sm-2 d-flex justify-content-start">
+                    <!--yan taraf-->
+
+                    <img src="img/dre-logo.png" alt="" style="width: 32px; height: 32px; border-radius: 50%;">
+
+
+                </div>
+                <div class="col-sm-7 d-block">
+                    <div style="font-size: 13px;"><b class="text-dark"> dr. dre</b> </div>
+                    <div style="font-size: 11px; color: rgb(145, 141, 141);"> deadmau + 20 diğer kişi takip e...</div>
+                </div>
+                <div class="col-sm-3 d-flex justify-content-end text-center mt-2">
+                    <a href="#"
+                        style="text-decoration: none; font-size: 13px; color:#00a8ff; width: 58px; height: 10px;"
+                        class="me-0"><b class=""> Takip Et </b></a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-sm-2 d-flex justify-content-start">
+                    <!--yan taraf-->
+
+                    <img src="img/kygo-logo.jpeg" alt="" style="width: 32px; height: 32px; border-radius: 50%;">
+
+
+                </div>
+                <div class="col-sm-7 d-block">
+                    <div style="font-size: 13px;"><b class="text-dark"> kygo</b> </div>
+                    <div style="font-size: 11px; color: rgb(145, 141, 141);"> avicii + 5 diğer kişi takip ediyor</div>
+                </div>
+                <div class="col-sm-3 d-flex justify-content-end text-center mt-2">
+                    <a href="#"
+                        style="text-decoration: none; font-size: 13px; color:#00a8ff; width: 58px; height: 10px;"
+                        class="me-0"><b class=""> Takip Et </b></a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-sm-2 d-flex justify-content-start">
+                    <!--yan taraf-->
+
+                    <img src="img/tree-logo.png" alt="" style="width: 32px; height: 32px; border-radius: 50%;">
+
+
+                </div>
+                <div class="col-sm-7 d-block">
+                    <div style="font-size: 13px;"><b class="text-dark"> tree</b> </div>
+                    <div style="font-size: 11px; color: rgb(145, 141, 141);"> ocean + 3 diğer kişi takip ediyor</div>
+                </div>
+                <div class="col-sm-3 d-flex justify-content-end text-center mt-2">
+                    <a href="#"
+                        style="text-decoration: none; font-size: 13px; color:#00a8ff; width: 58px; height: 10px;"
+                        class="me-0"><b class=""> Takip Et </b></a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-sm-2 d-flex justify-content-start">
+                    <!--yan taraf-->
+
+                    <img src="img/sea-logo.png" alt="" style="width: 32px; height: 32px; border-radius: 50%;">
+
+
+                </div>
+                <div class="col-sm-7 d-block">
+                    <div style="font-size: 13px;"><b class="text-dark"> sea shepherd</b> </div>
+                    <div style="font-size: 11px; color: rgb(145, 141, 141);"> ocean + 3 diğer kişi takip ediyor</div>
+                </div>
+                <div class="col-sm-3 d-flex justify-content-end text-center mt-2">
+                    <a href="#"
+                        style="text-decoration: none; font-size: 13px; color:#00a8ff; width: 58px; height: 10px;"
+                        class="me-0"><b class=""> Takip Et </b></a>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-12">
+                    <a href="" class="text-muted" style="text-decoration: none; font-size: 11px; "><b
+                            style="font-size: 11px; color: rgb(201, 195, 195);"> Hakkında </b></a>
+                    <a href="" class="text-muted" style="text-decoration: none; font-size: 11px; "><b
+                            style="font-size: 11px; color: rgb(201, 195, 195);">. Yardım</b></a>
+                    <a href="" class="text-muted" style="text-decoration: none; font-size: 11px; "><b
+                            style="font-size: 11px; color: rgb(201, 195, 195);">. Basın</b></a>
+                    <a href="" class="text-muted" style="text-decoration: none; font-size: 11px; "><b
+                            style="font-size: 11px; color: rgb(201, 195, 195);">. API</b></a>
+                    <a href="" class="text-muted" style="text-decoration: none; font-size: 11px; "><b
+                            style="font-size: 11px; color: rgb(201, 195, 195);">. İş Fırsatları</b></a>
+                    <a href="" class="text-muted" style="text-decoration: none; font-size: 11px; "><b
+                            style="font-size: 11px; color: rgb(201, 195, 195);">. Gizlilik</b></a>
+                    <a href="" class="text-muted" style="text-decoration: none; font-size: 11px; "><b
+                            style="font-size: 11px; color: rgb(201, 195, 195);">. Koşullar</b></a>
+                    <a href="" class="text-muted" style="text-decoration: none; font-size: 11px; "><b
+                            style="font-size: 11px; color: rgb(201, 195, 195);">Konumlar</b></a>
+                    <a href="" class="text-muted" style="text-decoration: none; font-size: 11px; "><b
+                            style="font-size: 11px; color: rgb(201, 195, 195);">. Dil</b></a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-sm-12">
+                    <div style="font-size: 12px; color: rgb(201, 195, 195);"> © 2022 INSTAGRAM FROM META</div>
+                </div>
+            </div>
+            </div>
+        </article>
+    </section>
+    <!-- Section(Article,Aside)  -  End -->
+    <!-- Content  -  End -->
+
+    <!-- Footer  -  Start -->
+    <!-- Footer  -  End -->
+
+</body>
+
+</html>

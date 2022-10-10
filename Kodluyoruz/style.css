@@ -1,0 +1,13 @@
+
+.form-control {
+    background-color: rgb(240, 237, 237);
+}
+
+.container-fluid {
+    box-shadow: 1px #dcdcdc;
+    border: 1px solid #c8c8c8;
+}
+
+body {
+    background-color: #f7f7f7;
+}
