@@ -21,7 +21,7 @@ Sitenin görüntüsü bu şekilde :
 - Simetri.
 
 Eksileri;
-- Sağ tarafta kalan kısmı sticky olarak ayarlanamadı.
+- Sağ tarafta kalan kısmı sticky olarak ayarlanmadı. (dileyen fixed top ile ayarlayabilir)
 - Ara çubuğunun içerisine search ikonu yerleştirilemedi.
 - Fotoğraflar kutunun içerisini tam doldurmadı.
 
